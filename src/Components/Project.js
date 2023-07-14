@@ -6,6 +6,19 @@ export default function Project() {
         mainContainer: { height: '90vh', marginTop: '10vh' },
         colorText: { color: '#be50f4' }
     }
+    const myProjects = [
+        {
+            id: '1',
+            projectName: 'NEWS App',
+            projectURL: 'https://github.com/mustaphashykh/NEWS-App',
+            projectDescription: 'The NEWS App is react base utility using NEWS API for NEWS material. It is designed for those having fond of being up to date by reading authenticate NEWS.'
+        }, {
+            id: '2',
+            projectName: 'iNoteBook',
+            projectURL: 'https://github.com/mustaphashykh/inotebook',
+            projectDescription: 'The iNteBook App is full stack utility. It is designed for those having fond of taking important notes down.'
+        },
+    ]
     return (
         <div className="container">
             <div className="row">
@@ -15,12 +28,13 @@ export default function Project() {
                             <h1 className='py-4' style={styles.colorText}>My Projects</h1>
                         </div>
                         <div className='row pb-5 mx-auto'>
-                            <div className='col-lg-4 mx-auto pt-3'><ProjectsCard /></div>
-                            <div className='col-lg-4 mx-auto pt-3'><ProjectsCard /></div>
-                            <div className='col-lg-4 mx-auto pt-3'><ProjectsCard /></div>
-                            <div className='col-lg-4 mx-auto pt-3'><ProjectsCard /></div>
-                            <div className='col-lg-4 mx-auto pt-3'><ProjectsCard /></div>
-                            <div className='col-lg-4 mx-auto pt-3'><ProjectsCard /></div>
+                            {
+                                myProjects.map((items) => {
+                                    return (
+                                        <div key={items.id} className='col-lg-4 mx-auto pt-3'><ProjectsCard name={items.projectName} URL={items.projectURL} des={items.projectDescription} /></div>
+                                    )
+                                })
+                            }
                         </div>
                     </div>
                 </div>

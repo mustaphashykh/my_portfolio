@@ -28,13 +28,13 @@ export default function Home() {
                             <h5 style={{ paddingRight: '20px', paddingLeft: '20px', }}>I'm a Software Engineer based in Pakistan-Asia, having expertise in Web app and Mobile App development.</h5>
                         </div>
                         <div className='d-flex justify-content-center my-4' style={styles.iconContainer}>
-                            <a href="https://www.instagram.com/mustaphahahahaha/" target='_blank'>
+                            <a href="https://www.instagram.com/mustaphahahahaha/"  >
                                 <i className="fa-brands fa-instagram icons" aria-hidden="true"></i>
                             </a>
-                            <a href="https://github.com/mustaphashykh" target='_blank'>
+                            <a href="https://github.com/mustaphashykh"  >
                                 <i className="fa-brands fa-github icons" aria-hidden="true"></i>
                             </a>
-                            <a href="https://www.linkedin.com/in/mustafa-shaikh-mern-stack-developer/" target='_blank'>
+                            <a href="https://www.linkedin.com/in/mustafa-shaikh-mern-stack-developer/"  >
                                 <i className="fa-brands fa-linkedin icons" aria-hidden="true"></i>
                             </a>
                         </div>
